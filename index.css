@@ -5,7 +5,8 @@
 
 body {
     height: 100vh;
-    background: rgb(124, 123, 120);
+    background: rgb(0, 0, 0);
+    overflow: hidden;
 }
 
 .container {
@@ -20,14 +21,16 @@ body {
     position: relative;
     top: 40%;
     transform: translateY(-40%);
-    border-radius: 5px;
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.951);
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 6px 30px 0px rgba(255, 255, 255, 0.951);
+    z-index: 9;
 }
 
 h1 {
     padding: 25px;
     text-decoration: underline 0.1rem rgb(0, 0, 0) ;
+    content: " 2";
 }
 
 p {
@@ -52,6 +55,7 @@ form input {
 form #send {
     padding: 10px 50px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 span{
@@ -59,4 +63,30 @@ span{
 }
 .green{
     color: green;
+}
+
+
+.nomber{
+    position: absolute;
+    /* border-radius: 300px; */
+    background: rgba(255, 166, 0, 0);
+    opacity: 0.5;
+    animation: anim 18s forwards;
+    color: green;
+    font-weight: 900;
+    /* box-shadow: 0 0 0 rgb(255, 255, 255); */
+    /* filter: hue-rotate(0deg);  */
+    rotate: 0deg;
+}
+
+
+@keyframes anim {
+    to {
+        top: 150%;
+        left: var(--left);
+        opacity: 1;
+        rotate: var(--rotate);
+        /* filter: brightness(1.7); */
+        /* filter: hue-rotate(720deg); */
+    }
 }
