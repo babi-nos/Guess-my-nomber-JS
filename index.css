@@ -68,7 +68,6 @@ span{
 
 .nomber{
     position: absolute;
-    /* border-radius: 300px; */
     background: rgba(255, 166, 0, 0);
     opacity: 0.5;
     animation: anim 18s forwards;
@@ -86,6 +85,7 @@ span{
         left: var(--left);
         opacity: 1;
         rotate: var(--rotate);
+
         /* filter: brightness(1.7); */
         /* filter: hue-rotate(720deg); */
     }
